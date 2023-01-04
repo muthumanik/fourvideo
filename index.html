@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50.00%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:red;">
+    <video id="first" width="600" height="120" controls autoplay>
+	 <source src="videoplayback.mp4" type="video/mp4">
+    </video>  
+   </div>
+  <div class="column" style="background-color:black;">
+    <video id="second" width="600" height="120" controls autoplay>
+	 <source src="baby.mp4" type="video/mp4">
+    </video>   
+	</div>
+  <div class="column" style="background-color:black;">
+	 <video id="three" width="600" height="120" controls autoplay>
+	 <source src="baby.mp4" type="video/mp4">
+    </video>
+  </div>
+   <div class="column" style="background-color:red;">
+    <video id="second" width="600" height="120" controls autoplay>
+	 <source src="play.mp4" type="video/mp4">
+    </video>   
+	</div>
+</div>
+
+</body>
+</html>
